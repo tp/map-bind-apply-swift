@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.omnigroup.com/namespace/OmniOutliner/xmloutline-v5.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0?>
+<outline xmlns="http://www.omnigroup.com/namespace/OmniOutliner/v5" type-of-file-on-disk="package">
+  <style-attribute-registry>
+    <style-attribute version="0" key="font-family" group="font" name="family" class="string">Helvetica</style-attribute>
+    <style-attribute version="1" key="font-fill" group="font" name="fill color" class="color">
+      <color w="0"/>
+    </style-attribute>
+    <style-attribute version="0" key="font-fixed-pitch" group="font" name="fixed pitch" class="bool">no</style-attribute>
+    <style-attribute version="0" key="font-italic" group="font" name="italic" class="bool">no</style-attribute>
+    <style-attribute version="0" key="font-size" group="font" name="size" class="number" integral="0" min="1" max="65536">12</style-attribute>
+    <style-attribute version="0" key="font-weight" group="font" name="weight" class="number" integral="1" min="1" max="14">5</style-attribute>
+    <style-attribute version="0" key="paragraph-alignment" group="paragraph" name="alignment" class="enum">
+      <enum-name-table default-value="4">
+        <enum-name-table-element value="0" name="left"/>
+        <enum-name-table-element value="1" name="right"/>
+        <enum-name-table-element value="2" name="center"/>
+        <enum-name-table-element value="3" name="justified"/>
+        <enum-name-table-element value="4" name="natural"/>
+      </enum-name-table>
+    </style-attribute>
+    <style-attribute version="0" key="paragraph-base-writing-direction" group="paragraph" name="writing direction" class="enum">
+      <enum-name-table default-value="-1">
+        <enum-name-table-element value="-1" name="natural"/>
+        <enum-name-table-element value="0" name="left-to-right"/>
+        <enum-name-table-element value="1" name="right-to-left"/>
+      </enum-name-table>
+    </style-attribute>
+    <style-attribute version="0" key="paragraph-line-height-multiple" group="paragraph" name="line height multiple" class="number" integral="0" min="0" max="1000">0</style-attribute>
+    <style-attribute version="1" key="strikethrough-color" group="strikethrough" name="color" class="color">
+      <color w="0"/>
+    </style-attribute>
+    <style-attribute version="0" key="text-background-color" group="text" name="background color" class="color">
+      <color w="0" a="0"/>
+    </style-attribute>
+    <style-attribute version="1" key="underline-color" group="underline" name="color" class="color">
+      <color w="0"/>
+    </style-attribute>
+  </style-attribute-registry>
+  <named-styles>
+    <named-style id="eUsXLp0Pv1g" name="Heading 1" display-order="0">
+      <style>
+        <value key="font-family">Courier</value>
+        <value key="font-size">32</value>
+      </style>
+    </named-style>
+    <named-style id="d4-frBYwy2X" name="Heading 2" display-order="1">
+      <style>
+        <value key="font-family">Courier</value>
+        <value key="font-size">24</value>
+      </style>
+    </named-style>
+    <named-style id="kRw332h0q-G" name="Heading 3" display-order="2">
+      <style>
+        <value key="font-family">Courier</value>
+        <value key="font-size">18</value>
+      </style>
+    </named-style>
+    <named-style id="nU7Pax9sHwm" name="Highlight 1" display-order="3">
+      <style>
+        <value key="font-family">Courier</value>
+        <value key="text-background-color">
+          <color space="srgb" r="1" g="0.774726" b="0" a="0.25"/>
+        </value>
+      </style>
+    </named-style>
+    <named-style id="m6c_M2fT6yP" name="Highlight 2" display-order="4">
+      <style>
+        <value key="font-family">Courier</value>
+        <value key="text-background-color">
+          <color space="srgb" r="0.968049" g="0.472297" b="0.539657" a="0.25"/>
+        </value>
+      </style>
+    </named-style>
+    <named-style id="auoqZ5xVKeG" name="Highlight 3" display-order="5">
+      <style>
+        <value key="font-family">Courier</value>
+        <value key="text-background-color">
+          <color space="srgb" r="0.186904" g="0.546745" b="0.848225" a="0.289315"/>
+        </value>
+      </style>
+    </named-style>
+  </named-styles>
+  <settings>
+    <base-style>
+      <style>
+        <value key="font-family">Courier</value>
+        <value key="font-fill">
+          <color space="srgb" r="0.0196078" g="0.0627451" b="0.0980392"/>
+        </value>
+        <value key="font-fixed-pitch">yes</value>
+        <value key="font-size">15</value>
+        <value key="paragraph-base-writing-direction">left-to-right</value>
+        <value key="paragraph-line-height-multiple">1.2</value>
+        <value key="strikethrough-color">
+          <color space="srgb" r="0.0196078" g="0.0627451" b="0.0980392"/>
+        </value>
+        <value key="underline-color">
+          <color space="srgb" r="0.0196078" g="0.0627451" b="0.0980392"/>
+        </value>
+      </style>
+    </base-style>
+    <alternate-color>
+      <color space="gg22" w="0" a="0"/>
+    </alternate-color>
+    <margin-color>
+      <color space="srgb" r="0.999892" g="1" b="0.999881"/>
+    </margin-color>
+    <print-info>
+      <print-info-key name="NSPaperSize" type="size">{595.27555084228516, 841.8897705078125}</print-info-key>
+      <print-info-key name="OOScaleDocumentToFitPageWidth" type="boolean">true</print-info-key>
+    </print-info>
+  </settings>
+  <outline-title>
+    <text>
+      <p>
+        <run>
+          <style>
+            <value key="font-size">12</value>
+            <value key="paragraph-alignment">center</value>
+          </style>
+          <lit><cell variable="OODocumentFilenameVariableIdentifier"/></lit>
+        </run>
+      </p>
+    </text>
+  </outline-title>
+  <columns id="csZ4IYIb5kL" is-base-schema="yes" outline-column="jFqHUGd_Dg1" status-column="i1FNOQRpPxk" note-column="dTpN3JwYpBn">
+    <column id="i1FNOQRpPxk" type="checkbox" minimum-width="13" maximum-width="1000000">
+      <title>
+        <text>
+          <p/>
+        </text>
+      </title>
+    </column>
+    <column id="dTpN3JwYpBn" type="text" minimum-width="18" maximum-width="18">
+      <style>
+        <value key="font-fill">
+          <color space="srgb" r="0.404342" g="0.404352" b="0.404347"/>
+        </value>
+        <value key="font-italic">yes</value>
+        <value key="font-size">12</value>
+        <value key="strikethrough-color">
+          <color space="srgb" r="0.404342" g="0.404352" b="0.404347"/>
+        </value>
+        <value key="underline-color">
+          <color space="srgb" r="0.404342" g="0.404352" b="0.404347"/>
+        </value>
+      </style>
+      <title>
+        <text>
+          <p/>
+        </text>
+      </title>
+    </column>
+    <column id="jFqHUGd_Dg1" type="text" minimum-width="13" maximum-width="1000000">
+      <title>
+        <text>
+          <p>
+            <run>
+              <lit>Topic</lit>
+            </run>
+          </p>
+        </text>
+      </title>
+    </column>
+  </columns>
+  <items>
+    <style/>
+    <item rank="" is-root="yes" schema="csZ4IYIb5kL" children-are-sections="yes">
+      <entry/>
+      <entry/>
+      <entry/>
+    </item>
+    <item id="bU1-pD154kp" parent-id="j0HeGXm1Bzx" rank="0001">
+      <entry/>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <style>
+              <value key="font-weight">9</value>
+            </style>
+            <lit>map</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="cVvJ-sNMrSr" parent-id="daUoGDIDefS" rank="0001">
+      <checkbox>unchecked</checkbox>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>“Elevated World”: Thing becomes E&lt;Thing&gt;</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="dP2GJe5U-u2" parent-id="gTow7HyxD8I" rank="">
+      <checkbox>unchecked</checkbox>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>Unpacks a function wrapped inside and elevated value into a lifted function E&lt;a&gt; -&gt; E&lt;b&gt;</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="dUbBMgygOZ2" parent-id="nISbEzR8Djn" rank="0001">
+      <checkbox>unchecked</checkbox>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>signature: a -&gt; E&lt;a&gt;</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="daUoGDIDefS" parent-id="nTBV7hXxoVd" rank="">
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit><cell href="https://fsharpforfunandprofit.com/posts/elevated-world/" name="https://fsharpforfunandprofit.com/posts/elevated-world/" type="link"/></lit>
+          </run>
+        </p>
+      </text>
+      <text>
+        <p>
+          <run>
+            <lit>Part I: Understanding map and apply</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="dmuQwlYmtc_" parent-id="gTow7HyxD8I" rank="0001">
+      <checkbox>unchecked</checkbox>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>signature: E&lt;(a -&gt; b)&gt; -&gt; E&lt;a&gt; -&gt; E&lt;b&gt;</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="drOzj__u0MO" parent-id="bU1-pD154kp" rank="00ff3f">
+      <checkbox>unchecked</checkbox>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>common operators: &lt;$&gt;, &lt;!&gt;</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="gTow7HyxD8I" parent-id="j0HeGXm1Bzx" rank="0003">
+      <entry/>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <style>
+              <value key="font-weight">9</value>
+            </style>
+            <lit>apply</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="gnDeZKhZAC_" parent-id="gTow7HyxD8I" rank="00003f">
+      <checkbox>unchecked</checkbox>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>common operator: &lt;*&gt;</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="hCL4ikXQeyt" parent-id="j0HeGXm1Bzx" rank="">
+      <checkbox>unchecked</checkbox>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>lifting: moving something from the normal world to the elevated world</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="iTIqaNWhxQ4" parent-id="daUoGDIDefS" rank="00021f">
+      <checkbox>unchecked</checkbox>
+      <text>
+        <p>
+          <run>
+            <lit><cell href="https://github.com/apple/swift-evolution/blob/master/proposals/0002-remove-currying.md" name="https://github.com/apple/swift-evolution/blob/master/proposals/0002-remove-currying.md" type="link"/></lit>
+          </run>
+        </p>
+      </text>
+      <text>
+        <p>
+          <run>
+            <lit>side note: currying `func` declaration has been removed from Swift</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="j0HeGXm1Bzx" parent-id="daUoGDIDefS" rank="00023f">
+      <entry/>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>Part 1: Lifting the elevated world</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="kpU0FWdNyk9" parent-id="bU1-pD154kp" rank="0002">
+      <checkbox>unchecked</checkbox>
+      <text>
+        <p>
+          <run>
+            <lit><cell href="https://en.wikibooks.org/wiki/Haskell/The_Functor_class#The_functor_laws" name="https://en.wikibooks.org/wiki/Haskell/The_Functor_class#The_functor_laws" type="link"/></lit>
+          </run>
+        </p>
+      </text>
+      <text>
+        <p>
+          <run>
+            <lit>correct implementation side-note: Functor Laws</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="ktCcl1yMamU" parent-id="nISbEzR8Djn" rank="">
+      <checkbox>unchecked</checkbox>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>Lifts a single value into the elevated world</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="lCTRdhWWB4s" parent-id="daUoGDIDefS" rank="0002">
+      <style>
+        <inherited-style name="Highlight 1" idref="nU7Pax9sHwm"/>
+      </style>
+      <checkbox>unchecked</checkbox>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>Maybe relevant later: E&lt;Int&gt; -&gt; E&lt;String&gt; vs E&lt;(Int -&gt; String)&gt;</lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>Was this my confusion between map, curry and apply?</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="maS4PtKSWvy" parent-id="gTow7HyxD8I" rank="0002">
+      <checkbox>unchecked</checkbox>
+      <text>
+        <p>
+          <run>
+            <lit>Found this great Swift curry function: </lit>
+          </run>
+          <run>
+            <lit><cell href="https://github.com/thoughtbot/Curry" name="https://github.com/thoughtbot/Curry" type="link"/></lit>
+          </run>
+        </p>
+      </text>
+      <text>
+        <p>
+          <run>
+            <lit>If you have a </lit>
+          </run>
+          <run>
+            <style>
+              <value key="font-italic">yes</value>
+            </style>
+            <lit>curried</lit>
+          </run>
+          <run>
+            <lit> two-parameter function, you can use `apply` twice in a row</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="nISbEzR8Djn" parent-id="j0HeGXm1Bzx" rank="0002">
+      <entry/>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <style>
+              <value key="font-weight">9</value>
+            </style>
+            <lit>return</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="nTBV7hXxoVd" rank="" children-are-sections="yes">
+      <style>
+        <inherited-style name="Heading 1" idref="eUsXLp0Pv1g"/>
+      </style>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit><cell href="https://vimeo.com/142347199" name="https://fsharpforfunandprofit.com/series/map-and-bind-and-apply-oh-my.html" type="link"/></lit>
+          </run>
+        </p>
+      </text>
+      <text>
+        <p>
+          <run>
+            <lit>Map and Bind and Apply Series (Scott Wlaschin)</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="ng_-w8TZoja" parent-id="bU1-pD154kp" rank="00003f">
+      <checkbox>unchecked</checkbox>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>signature: (a -&gt; b) -&gt; E&lt;a&gt; -&gt; E&lt;b&gt;</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="oGI-Qeu6riD" parent-id="bU1-pD154kp" rank="00ff">
+      <checkbox>unchecked</checkbox>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>Lifts a function into the elevated world</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="ooswBGiWk8Q" parent-id="bU1-pD154kp" rank="0001">
+      <checkbox>unchecked</checkbox>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>“each elevated world will have its own implementation of map”</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="phMFcFz_scd" parent-id="daUoGDIDefS" rank="">
+      <checkbox>unchecked</checkbox>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>Patterns for dealing with generic data types (Option, List, etc.)</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+  </items>
+</outline>
