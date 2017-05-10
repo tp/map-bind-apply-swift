@@ -185,6 +185,23 @@
         </p>
       </text>
     </item>
+    <item id="cHJNbVZ889Z" parent-id="gTow7HyxD8I" rank="0004">
+      <checkbox>unchecked</checkbox>
+      <text>
+        <p>
+          <run>
+            <lit><cell href="https://en.wikibooks.org/wiki/Haskell/Applicative_functors#Applicative_functor_laws" name="https://en.wikibooks.org/wiki/Haskell/Applicative_functors#Applicative_functor_laws" type="link"/></lit>
+          </run>
+        </p>
+      </text>
+      <text>
+        <p>
+          <run>
+            <lit>correct implementation side-note: Applicative Laws</lit>
+          </run>
+        </p>
+      </text>
+    </item>
     <item id="cVvJ-sNMrSr" parent-id="daUoGDIDefS" rank="0001">
       <checkbox>unchecked</checkbox>
       <entry/>
@@ -253,6 +270,70 @@
         <p>
           <run>
             <lit>common operators: &lt;$&gt;, &lt;!&gt;</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="dxxCy15GK09" parent-id="gTow7HyxD8I" rank="0003">
+      <entry/>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>apply vs. map: you can construct </lit>
+          </run>
+          <run>
+            <style>
+              <value key="font-italic">yes</value>
+            </style>
+            <lit>map</lit>
+          </run>
+          <run>
+            <lit> from </lit>
+          </run>
+          <run>
+            <style>
+              <value key="font-italic">yes</value>
+            </style>
+            <lit>apply</lit>
+          </run>
+          <run>
+            <lit> and </lit>
+          </run>
+          <run>
+            <style>
+              <value key="font-italic">yes</value>
+            </style>
+            <lit>return</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="eRsqbYtSarI" parent-id="dxxCy15GK09" rank="">
+      <checkbox>unchecked</checkbox>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>a -&gt; b </lit>
+          </run>
+          <run>
+            <style>
+              <value key="font-italic">yes</value>
+            </style>
+            <lit>return</lit>
+          </run>
+          <run>
+            <lit> E&lt;(a -&gt; b)&gt; </lit>
+          </run>
+          <run>
+            <style>
+              <value key="font-italic">yes</value>
+            </style>
+            <lit>apply</lit>
+          </run>
+          <run>
+            <lit> E&lt;a&gt; -&gt; E&lt;b&gt;</lit>
           </run>
         </p>
       </text>

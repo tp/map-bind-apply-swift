@@ -94,18 +94,17 @@ let add5 = curriedAdd(5)
 let add10 = curriedAdd(10)
 applyList([add5, add10], [0, 1, 2])
 
-precedencegroup ApplyPrecedence {
+precedencegroup ApplyOperatorPrecedence {
     associativity: left
     higherThan: MultiplicationPrecedence
 }
 
-infix operator <*>: ApplyPrecedence
+// apply operator
+infix operator <*>: ApplyOperatorPrecedence
 
-// Operator definition
 public func <*> <A, B>(_ f: Optional<(A) -> B>, _ a: Optional<A>) -> Optional<B> {
     return applyOption(f, a)
 }
-
 
 Optional.some(curriedAdd) <*> .some(5) <*> .some(3)
 
@@ -116,3 +115,28 @@ public func <*> <A, B>(_ fs: Array<(A) -> B>, a: Array<A>) -> Array<B> {
 [add5] <*> [1, 2]
 [curriedAdd] <*> [0, 1]
 [curriedAdd] <*> [0, 2] <*> [10, 20, 30]
+
+precedencegroup MapOperatorPrecedence {
+    associativity: left
+    higherThan: ApplyOperatorPrecedence
+}
+
+// map operator
+infix operator <!> : MapOperatorPrecedence
+
+// Operator definition
+public func <!> <A, B>(_ f: @escaping (A) -> B, _ a: Optional<A>) -> Optional<B> {
+    return mapOption(f)(a)
+}
+
+curriedAdd <!> .some(4) <*> .some(5)
+
+public func <!> <A, B>(_ f: @escaping (A) -> B, _ a: Array<A>) -> Array<B> {
+    return mapList(f)(a)
+}
+
+mapList(curriedAdd)([5, 10])
+mapList(curriedAdd)([5, 10]) <*> [1, 2]
+
+curriedAdd <!> [5, 10] <*> [1, 2]
+
