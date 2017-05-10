@@ -140,3 +140,91 @@ mapList(curriedAdd)([5, 10]) <*> [1, 2]
 
 curriedAdd <!> [5, 10] <*> [1, 2]
 
+//: lift2
+
+
+let addTriple = { (a: Int, b: Int, c: Int) in
+    return a + b + c
+}
+
+let curriedAddTriple = curry(addTriple)
+
+func optionLift2<A, B, C>(_ f: @escaping (A) -> (B) -> (C)) -> (Optional<A>) -> (Optional<B>) -> Optional<C> {
+    return {
+        x in
+        return {
+            y in
+            f <!> x <*> y
+        }
+    }
+}
+
+func optionLift3<A, B, C, D>(_ f: @escaping (A) -> (B) -> (C) -> (D)) -> (Optional<A>) -> (Optional<B>) -> (Optional<C>) -> Optional<D> {
+    return {
+        x in
+        return {
+            y in
+            return {
+                z in
+                f <!> x <*> y <*> z
+            }
+        }
+    }
+}
+
+let addPairOpt = optionLift2(curriedAdd)
+addPairOpt(.some(1))(.some(2))
+
+let addTripleOpt = optionLift3(curriedAddTriple)
+addTripleOpt(.some(1))(.some(2))(.some(3))
+
+//: one sided combinators <* and *>
+
+// NOTE(tp): listLift was not explained in the article, but I presume this to be the correct implementation
+func listLift2<A, B, C>(_ f: @escaping (A) -> (B) -> (C)) -> (Array<A>) -> (Array<B>) -> Array<C> {
+    return {
+        x in
+        return {
+            y in
+            f <!> x <*> y
+        }
+    }
+}
+
+precedencegroup CombineOperatorPrecedence {
+    associativity: left
+    higherThan: MultiplicationPrecedence
+}
+
+infix operator <*: CombineOperatorPrecedence
+
+public func <* <A, B>(_ x: Array<A>, _ y: Array<B>) -> Array<A> {
+    return listLift2({ leftA in { rightB in leftA } })(x)(y)
+}
+
+[1, 2] <* [3, 4, 5]   // expected: [1; 1; 1; 2; 2; 2]
+
+
+infix operator *>: CombineOperatorPrecedence
+
+public func *> <A, B>(_ x: Array<A>, _ y: Array<B>) -> Array<B> {
+    return listLift2({ leftA in { rightB in rightB } })(x)(y)
+}
+
+[1, 2] *> [3, 4, 5]   // expected: [3; 4; 5; 3; 4; 5]
+
+let repeatPattern = { (n: Int) in
+    return { (x: Array<Any>) in // NOTE(tp): Fails without the type annotation
+        return Array(0..<n) *> x
+    }
+}
+
+repeatPattern(3)(["a", "b"]) // expected: ["a"; "b"; "a"; "b"; "a"; "b"]
+
+let replicate = { (n: Int) in
+    return { (x: Any) in // NOTE(tp): Fails without the type annotation
+        return Array(0..<n) *> [x]
+    }
+}
+
+replicate(5)("A") // expected: ["A"; "A"; "A"; "A"; "A"]

@@ -185,6 +185,31 @@
         </p>
       </text>
     </item>
+    <item id="bY-jrhNySYH" parent-id="bpK2yvLv2fJ" rank="">
+      <checkbox>unchecked</checkbox>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>lift2, lift3, lift4, etc.</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="bpK2yvLv2fJ" parent-id="j0HeGXm1Bzx" rank="0004">
+      <entry/>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <style>
+              <value key="font-weight">9</value>
+            </style>
+            <lit>liftN</lit>
+          </run>
+        </p>
+      </text>
+    </item>
     <item id="cHJNbVZ889Z" parent-id="gTow7HyxD8I" rank="0004">
       <checkbox>unchecked</checkbox>
       <text>
@@ -209,6 +234,20 @@
         <p>
           <run>
             <lit>“Elevated World”: Thing becomes E&lt;Thing&gt;</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="dEnOqfPb-pi" parent-id="bpK2yvLv2fJ" rank="0004">
+      <style>
+        <inherited-style name="Highlight 1" idref="nU7Pax9sHwm"/>
+      </style>
+      <checkbox>unchecked</checkbox>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>I don’t feel like I have fully comprehended this section, need to revisit the concepts again.</lit>
           </run>
         </p>
       </text>
@@ -374,6 +413,34 @@
         </p>
       </text>
     </item>
+    <item id="huMv4ErhOKJ" parent-id="j0HeGXm1Bzx" rank="0005">
+      <entry/>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <style>
+              <value key="font-weight">9</value>
+            </style>
+            <lit>zip</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="hvM1aUZAvDf" parent-id="huMv4ErhOKJ" rank="">
+      <style>
+        <inherited-style name="Highlight 2" idref="m6c_M2fT6yP"/>
+      </style>
+      <checkbox>unchecked</checkbox>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>Skipped for now. The basic concept of zip is clear, but a translation into Swift would be a lot of effort at the moment.</lit>
+          </run>
+        </p>
+      </text>
+    </item>
     <item id="iTIqaNWhxQ4" parent-id="daUoGDIDefS" rank="00021f">
       <checkbox>unchecked</checkbox>
       <text>
@@ -398,6 +465,17 @@
         <p>
           <run>
             <lit>Part 1: Lifting the elevated world</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="jf_AjKUPgQw" parent-id="orTCyDpP8Vz" rank="0001">
+      <checkbox>unchecked</checkbox>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>lift3: (a -&gt; b -&gt; c -&gt; d) -&gt; E&lt;a&gt; -&gt; E&lt;b&gt; -&gt; E&lt;c&gt; -&gt; E&lt;d&gt;</lit>
           </run>
         </p>
       </text>
@@ -445,6 +523,32 @@
         <p>
           <run>
             <lit>Was this my confusion between map, curry and apply?</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="m_M4BZh5mct" parent-id="bpK2yvLv2fJ" rank="0003">
+      <checkbox>unchecked</checkbox>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>One sided combiners: </lit>
+          </run>
+          <run>
+            <style>
+              <value key="font-weight">9</value>
+            </style>
+            <lit>&lt;*</lit>
+          </run>
+          <run>
+            <lit> and </lit>
+          </run>
+          <run>
+            <style>
+              <value key="font-weight">9</value>
+            </style>
+            <lit>*&gt;</lit>
           </run>
         </p>
       </text>
@@ -523,6 +627,17 @@
         </p>
       </text>
     </item>
+    <item id="o1Bx1Xrgqrr" parent-id="orTCyDpP8Vz" rank="">
+      <checkbox>unchecked</checkbox>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>lift2: (a -&gt; b -&gt; c) -&gt; E&lt;a&gt; -&gt; E&lt;b&gt; -&gt; E&lt;c&gt;</lit>
+          </run>
+        </p>
+      </text>
+    </item>
     <item id="oGI-Qeu6riD" parent-id="bU1-pD154kp" rank="00ff">
       <checkbox>unchecked</checkbox>
       <entry/>
@@ -534,6 +649,17 @@
         </p>
       </text>
     </item>
+    <item id="olN0fi4mQXU" parent-id="bpK2yvLv2fJ" rank="0001">
+      <checkbox>unchecked</checkbox>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>Combines 2 (3, 4, etc.) elevated values using a specified function</lit>
+          </run>
+        </p>
+      </text>
+    </item>
     <item id="ooswBGiWk8Q" parent-id="bU1-pD154kp" rank="0001">
       <checkbox>unchecked</checkbox>
       <entry/>
@@ -541,6 +667,17 @@
         <p>
           <run>
             <lit>“each elevated world will have its own implementation of map”</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="orTCyDpP8Vz" parent-id="bpK2yvLv2fJ" rank="0002">
+      <entry/>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>signatures:</lit>
           </run>
         </p>
       </text>
