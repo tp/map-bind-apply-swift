@@ -171,6 +171,31 @@
       <entry/>
       <entry/>
     </item>
+    <item id="aBOuvYO3xZG" parent-id="daUoGDIDefS" rank="0004">
+      <checkbox>unchecked</checkbox>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>Part III: Using the core functions in practice</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="azVP_A5SsGt" parent-id="eMaMCpFjwPz" rank="">
+      <style>
+        <inherited-style name="Highlight 1" idref="nU7Pax9sHwm"/>
+      </style>
+      <checkbox>unchecked</checkbox>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>First had an issue with nested Optionals, but that came from my bindOption signature being wrong</lit>
+          </run>
+        </p>
+      </text>
+    </item>
     <item id="bU1-pD154kp" parent-id="j0HeGXm1Bzx" rank="0001">
       <entry/>
       <entry/>
@@ -227,6 +252,20 @@
         </p>
       </text>
     </item>
+    <item id="cQdZKoFY7Rs" parent-id="dXOmbTUbVkf" rank="">
+      <entry/>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <style>
+              <value key="font-weight">9</value>
+            </style>
+            <lit>bind</lit>
+          </run>
+        </p>
+      </text>
+    </item>
     <item id="cVvJ-sNMrSr" parent-id="daUoGDIDefS" rank="0001">
       <checkbox>unchecked</checkbox>
       <entry/>
@@ -234,6 +273,17 @@
         <p>
           <run>
             <lit>“Elevated World”: Thing becomes E&lt;Thing&gt;</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="cjeguOzpRFp" parent-id="cQdZKoFY7Rs" rank="0001">
+      <checkbox>unchecked</checkbox>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>signature: (a -&gt; E&lt;b&gt;) -&gt; E&lt;a&gt; -&gt; E&lt;b&gt;</lit>
           </run>
         </p>
       </text>
@@ -274,6 +324,17 @@
         </p>
       </text>
     </item>
+    <item id="dXOmbTUbVkf" parent-id="daUoGDIDefS" rank="0003">
+      <entry/>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>Part II: How to compose world-crossing functions</lit>
+          </run>
+        </p>
+      </text>
+    </item>
     <item id="daUoGDIDefS" parent-id="nTBV7hXxoVd" rank="">
       <entry/>
       <text>
@@ -298,6 +359,20 @@
         <p>
           <run>
             <lit>signature: E&lt;(a -&gt; b)&gt; -&gt; E&lt;a&gt; -&gt; E&lt;b&gt;</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="drKxkvIkGFM" parent-id="cQdZKoFY7Rs" rank="0003">
+      <entry/>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>Correct implementation: </lit>
+          </run>
+          <run>
+            <lit><cell href="https://en.wikibooks.org/wiki/Haskell/Understanding_monads#Monad_Laws" name="&quot;Monad Laws&quot;" type="link"/></lit>
           </run>
         </p>
       </text>
@@ -348,6 +423,17 @@
         </p>
       </text>
     </item>
+    <item id="eMaMCpFjwPz" parent-id="cQdZKoFY7Rs" rank="0002">
+      <entry/>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>Some unresolved trouble around nested Optionals</lit>
+          </run>
+        </p>
+      </text>
+    </item>
     <item id="eRsqbYtSarI" parent-id="dxxCy15GK09" rank="">
       <checkbox>unchecked</checkbox>
       <entry/>
@@ -373,6 +459,17 @@
           </run>
           <run>
             <lit> E&lt;a&gt; -&gt; E&lt;b&gt;</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="fZRifi_QJRa" parent-id="cQdZKoFY7Rs" rank="00003f">
+      <checkbox>unchecked</checkbox>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>common operators: &gt;&gt;= (left to right), =&lt;&lt; (right to left)</lit>
           </run>
         </p>
       </text>
@@ -409,6 +506,17 @@
         <p>
           <run>
             <lit>lifting: moving something from the normal world to the elevated world</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="hJ8zuTxvJI6" parent-id="drKxkvIkGFM" rank="">
+      <checkbox>unchecked</checkbox>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>Generic type E&lt;T&gt;, bind, and return</lit>
           </run>
         </p>
       </text>
@@ -465,6 +573,17 @@
         <p>
           <run>
             <lit>Part 1: Lifting the elevated world</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="jT2eJUhAvHl" parent-id="cQdZKoFY7Rs" rank="">
+      <checkbox>unchecked</checkbox>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>Compose world-crossing (“monadic”) functions</lit>
           </run>
         </p>
       </text>

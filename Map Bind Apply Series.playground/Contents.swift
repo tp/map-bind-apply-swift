@@ -228,3 +228,73 @@ let replicate = { (n: Int) in
 }
 
 replicate(5)("A") // expected: ["A"; "A"; "A"; "A"; "A"]
+
+
+//: bind
+
+// has type : ('a -> 'b option) -> 'a option -> 'b option
+func bindOption<A, B>(_ f: @escaping (A) -> Optional<B>) -> (Optional<A>) -> Optional<B> {
+    return {
+        a in
+        guard case .some(let a) = a else {
+            return .none
+        }
+    
+        return f(a)
+    }
+}
+
+func bindList<A, B>(_ f: @escaping (A) -> Array<B>) -> (Array<A>) -> Array<B> {
+    return {
+        a in
+        a.flatMap { f($0) }
+    }
+}
+
+func parseInt(_ s: String) -> Optional<Int> {
+    return Int.init(s)
+}
+
+struct OrderQuantity {
+    let quantity: Int
+}
+
+func orderQuantity(_ quantity: Int) -> Optional<OrderQuantity> {
+    if (quantity >= 1) {
+        return .some(OrderQuantity(quantity: quantity))
+    } else {
+        return .none
+    }
+}
+
+let boundOrderQuantity = bindOption(orderQuantity)
+
+// signature is String -> Optional<OrderQuantity>
+let parseOrderQty = { str in bindOption(orderQuantity)(parseInt(str)) }
+
+infix operator >>=: ApplyOperatorPrecedence
+
+public func >>= <A, B>(_ a: Optional<A>, _ f: @escaping (A) -> Optional<B>) -> Optional<B> {
+    return bindOption(f)(a)
+}
+
+let parseOrderQty_alt = { str in parseInt(str) >>= orderQuantity }
+
+// defining the |> operator, so we can write the example like in the series
+
+infix operator |>: ApplyOperatorPrecedence
+
+public func |> <A, B>(_ a: A, _ f: @escaping (A) -> B) -> B {
+    return f(a)
+}
+
+let parseOrderQty_pipe = { $0 |> parseInt >>= orderQuantity }
+
+parseOrderQty("0")
+parseOrderQty("1")
+
+parseOrderQty_alt("0")
+parseOrderQty_alt("1")
+
+parseOrderQty_pipe("0")
+parseOrderQty_pipe("1")
