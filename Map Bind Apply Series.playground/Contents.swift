@@ -298,3 +298,151 @@ parseOrderQty_alt("1")
 
 parseOrderQty_pipe("0")
 parseOrderQty_pipe("1")
+
+//: Part 3: Using the core functions in practice
+
+// Example: Validation using applicative style and monadic style
+
+enum ValidatedObjectCreationResult<Value> {
+    case success(Value)
+    case failure(Array<String>)
+}
+
+struct CustomerId {
+    let id: Int;
+    
+    private init(id: Int) {
+        self.id = id
+    }
+    
+    public static func create(_ id: Int) -> ValidatedObjectCreationResult<CustomerId> {
+        if id > 0 {
+            return .success(CustomerId(id: id));
+        } else {
+            return .failure(["CustomerId must be positive"])
+        }
+    }
+}
+
+struct CustomerEmail {
+    let email: String;
+    
+    private init(email: String) {
+        self.email = email
+    }
+    
+    public static func create(_ email: String) -> ValidatedObjectCreationResult<CustomerEmail> {
+        if email.isEmpty {
+            return .failure(["CustomerEmail must not be empty"])
+        } else if !email.contains("@") {
+            return .failure(["CustomerEmail must contain @-sign"])
+        } else {
+            return .success(CustomerEmail(email: email))
+        }
+    }
+}
+
+// Signature: ('a -> 'b) -> Result<'a> -> Result<'b>
+func mapResult<A, B>(_ f: @escaping (A) -> B) -> (ValidatedObjectCreationResult<A>) -> ValidatedObjectCreationResult<B> {
+    return { a in
+        switch a {
+        case .success(let aValue):
+            return .success(f(aValue))
+        case .failure(let failureValue):
+            return .failure(failureValue)
+        }
+    }
+}
+
+// T -> Result<T>
+func retn<T>(_ v: T) -> ValidatedObjectCreationResult<T> {
+    return .success(v)
+}
+
+// Signature: Result<('a -> 'b)> -> Result<'a> -> Result<'b>
+// apply
+func applyResult<A, B>(_ f: ValidatedObjectCreationResult<(A) -> B>) -> (ValidatedObjectCreationResult<A>) -> ValidatedObjectCreationResult<B> {
+    return {
+        a in
+        switch (f, a) {
+        case (.success(let f), .success(let a)):
+            return .success(f(a))
+        case (.failure(let f), .success(_)):
+            return .failure(f)
+        case (.success(_), .failure(let a)):
+            return .failure(a)
+        case (.failure(let f), .failure(let a)):
+            return .failure(f + a)
+        }
+    }
+}
+
+// Signature: ('a -> Result<'b>) -> Result<'a> -> Result<'b>
+// bind
+func bindResult<A, B>(_ f: @escaping (A) -> ValidatedObjectCreationResult<B>) -> (ValidatedObjectCreationResult<A>) -> ValidatedObjectCreationResult<B> {
+    return {
+        a in
+        switch a {
+            case .success(let a):
+                return f(a)
+            case .failure(let failure):
+                return .failure(failure)
+        }
+    }
+}
+
+struct CustomerInfo {
+    let id: CustomerId
+    let email: CustomerEmail
+}
+
+let createCustomer = curry(CustomerInfo.init)
+
+// operators
+
+func <*> <A, B>(_ f: ValidatedObjectCreationResult<(A) -> B>, _ a: ValidatedObjectCreationResult<A>) -> ValidatedObjectCreationResult<B> {
+    return applyResult(f)(a)
+}
+
+func <!> <A, B>(_ f: @escaping (A) -> B, _ a: ValidatedObjectCreationResult<A>) -> ValidatedObjectCreationResult<B> {
+    return mapResult(f)(a)
+}
+
+// Applicative style
+
+func createCustomerInfoResultAf(id: Int, email: String) -> ValidatedObjectCreationResult<CustomerInfo> {
+    let id = CustomerId.create(id)
+    let email = CustomerEmail.create(email)
+    return createCustomer <!> id <*> email
+}
+let createCustomerInfoResultA = curry(createCustomerInfoResultAf)
+
+// trying it out
+let goodId = 1
+let badId = 0
+let goodEmail = "test@example.com"
+let badEmail = "example.com"
+
+let goodCustomerA = createCustomerInfoResultA(goodId)(goodEmail)
+let badCustomerA = createCustomerInfoResultA(badId)(badEmail)
+
+// Monadic style
+
+func >>= <A, B>(_ a: ValidatedObjectCreationResult<A>, _ f: @escaping (A) -> ValidatedObjectCreationResult<B>) -> ValidatedObjectCreationResult<B> {
+    return bindResult(f)(a)
+}
+
+func createCustomerInfoResultMf(id: Int, email: String) -> ValidatedObjectCreationResult<CustomerInfo> {
+    return CustomerId.create(id) >>= {
+        customerId in
+        CustomerEmail.create(email) >>= {
+            customerEmail in
+            return .success(createCustomer(customerId)(customerEmail))
+        }
+    }
+}
+let createCustomerInfoResultM = curry(createCustomerInfoResultMf)
+
+let goodCustomerM = createCustomerInfoResultM(goodId)(goodEmail)
+let badCustomerM = createCustomerInfoResultM(badId)(badEmail) // Note: only contains the first error message
+

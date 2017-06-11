@@ -172,7 +172,7 @@
       <entry/>
     </item>
     <item id="aBOuvYO3xZG" parent-id="daUoGDIDefS" rank="0004">
-      <checkbox>unchecked</checkbox>
+      <entry/>
       <entry/>
       <text>
         <p>
@@ -231,6 +231,17 @@
               <value key="font-weight">9</value>
             </style>
             <lit>liftN</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="c3QswB7KuLS" parent-id="lXnE5HfMMil" rank="00ff">
+      <entry/>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>2 styles</lit>
           </run>
         </p>
       </text>
@@ -335,6 +346,20 @@
         </p>
       </text>
     </item>
+    <item id="d_0B_lABnCU" parent-id="daxP1CvuRdb" rank="">
+      <style>
+        <inherited-style name="Highlight 1" idref="nU7Pax9sHwm"/>
+      </style>
+      <checkbox>unchecked</checkbox>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit><cell href="https://webcache.googleusercontent.com/search?q=cache:XW9MmC7_JqcJ:https://lists.swift.org/pipermail/swift-evolution/Week-of-Mon-20151207/001450.html+&amp;cd=1&amp;hl=en&amp;ct=clnk&amp;gl=us" name="https://webcache.googleusercontent.com/search?q=cache:XW9MmC7_JqcJ:https://lists.swift.org/pipermail/swift-evolution/Week-of-Mon-20151207/001450.html+&amp;cd=1&amp;hl=en&amp;ct=clnk&amp;gl=us" type="link"/></lit>
+          </run>
+        </p>
+      </text>
+    </item>
     <item id="daUoGDIDefS" parent-id="nTBV7hXxoVd" rank="">
       <entry/>
       <text>
@@ -351,6 +376,25 @@
           </run>
         </p>
       </text>
+    </item>
+    <item id="daxP1CvuRdb" parent-id="hnkRgY7y0b6" rank="">
+      <style>
+        <inherited-style name="Highlight 1" idref="nU7Pax9sHwm"/>
+      </style>
+      <entry/>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>The use of the `Result` type  is currently not considered idiomatic Swift (v 3 / 4); standard library functions use `throw` instead</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="dbLzTyukWLJ" parent-id="aBOuvYO3xZG" rank="0003">
+      <checkbox>unchecked</checkbox>
+      <entry/>
+      <entry/>
     </item>
     <item id="dmuQwlYmtc_" parent-id="gTow7HyxD8I" rank="0001">
       <checkbox>unchecked</checkbox>
@@ -463,6 +507,17 @@
         </p>
       </text>
     </item>
+    <item id="ebpSXn6ZDUO" parent-id="c3QswB7KuLS" rank="">
+      <entry/>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>applicative</lit>
+          </run>
+        </p>
+      </text>
+    </item>
     <item id="fZRifi_QJRa" parent-id="cQdZKoFY7Rs" rank="00003f">
       <checkbox>unchecked</checkbox>
       <entry/>
@@ -470,6 +525,31 @@
         <p>
           <run>
             <lit>common operators: &gt;&gt;= (left to right), =&lt;&lt; (right to left)</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="feBakb6zWZv" parent-id="daxP1CvuRdb" rank="00ff">
+      <style>
+        <inherited-style name="Highlight 1" idref="nU7Pax9sHwm"/>
+      </style>
+      <checkbox>unchecked</checkbox>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit><cell href="https://www.cocoawithlove.com/blog/2016/08/21/result-types-part-one.html#the-result-type" name="https://www.cocoawithlove.com/blog/2016/08/21/result-types-part-one.html#the-result-type" type="link"/></lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="fnWXMixHfrl" parent-id="ebpSXn6ZDUO" rank="">
+      <checkbox>unchecked</checkbox>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>apply, lift, combine</lit>
           </run>
         </p>
       </text>
@@ -517,6 +597,17 @@
         <p>
           <run>
             <lit>Generic type E&lt;T&gt;, bind, and return</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="hnkRgY7y0b6" parent-id="aBOuvYO3xZG" rank="0001">
+      <entry/>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>Validation example</lit>
           </run>
         </p>
       </text>
@@ -599,6 +690,17 @@
         </p>
       </text>
     </item>
+    <item id="kLftiIHRfRx" parent-id="ebpSXn6ZDUO" rank="0001">
+      <checkbox>unchecked</checkbox>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>each elevated value is independent</lit>
+          </run>
+        </p>
+      </text>
+    </item>
     <item id="kpU0FWdNyk9" parent-id="bU1-pD154kp" rank="0002">
       <checkbox>unchecked</checkbox>
       <text>
@@ -642,6 +744,39 @@
         <p>
           <run>
             <lit>Was this my confusion between map, curry and apply?</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="lXnE5HfMMil" parent-id="aBOuvYO3xZG" rank="">
+      <entry/>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>Independent vs dependent data</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="lgBcUVlRkU7" parent-id="n4u3T3qR14z" rank="">
+      <checkbox>unchecked</checkbox>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>bind</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="lkWo76dT-Rb" parent-id="n4u3T3qR14z" rank="0001">
+      <checkbox>unchecked</checkbox>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>dependent on a previous value</lit>
           </run>
         </p>
       </text>
@@ -697,6 +832,17 @@
           </run>
           <run>
             <lit> two-parameter function, you can use `apply` twice in a row</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="n4u3T3qR14z" parent-id="c3QswB7KuLS" rank="0001">
+      <entry/>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>monadic</lit>
           </run>
         </p>
       </text>
