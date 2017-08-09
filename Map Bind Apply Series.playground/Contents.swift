@@ -74,7 +74,7 @@ applyOption(.some(add1), .none)
 applyOption(.some(add1), .some(1))
 applyOption(noneAdd, .some(5))
 
-let curriedAdd = curry(add);
+let curriedAdd = curry(add); // : (Int) -> (Int) -> Int
 let someCurriedAdd = Optional.some(curriedAdd)
 let addAnd5 = applyOption(someCurriedAdd, .some(5))
 let addAndNone = applyOption(someCurriedAdd, .none) // already returns .none
@@ -147,7 +147,7 @@ let addTriple = { (a: Int, b: Int, c: Int) in
     return a + b + c
 }
 
-let curriedAddTriple = curry(addTriple)
+let curriedAddTriple = curry(addTriple) // : (Int) -> (Int) -> (Int) -> Int
 
 func optionLift2<A, B, C>(_ f: @escaping (A) -> (B) -> (C)) -> (Optional<A>) -> (Optional<B>) -> Optional<C> {
     return {
@@ -445,4 +445,28 @@ let createCustomerInfoResultM = curry(createCustomerInfoResultMf)
 
 let goodCustomerM = createCustomerInfoResultM(goodId)(goodEmail)
 let badCustomerM = createCustomerInfoResultM(badId)(badEmail) // Note: only contains the first error message
+
+
+// Part 4: Mixing lists and elevated values
+
+let numberStrings = ["1", "2", "3"];
+let nonNumberStrings = ["1", "2", "x"];
+
+// Could not think of a Swift way of implementing the mapOption as described, unless the below version of using an intermediate array
+func mapOption<A, B>(_ input: Array<A>, _ map: (A) -> Optional<B>) -> Optional<Array<B>> {
+    var result = [B]();
+    
+    for v in input {
+        guard let mappedValue = map(v) else {
+            return .none
+        }
+
+        result.append(mappedValue)
+    }
+    
+    return result;
+}
+
+mapOption(numberStrings, parseInt)
+mapOption(nonNumberStrings, parseInt)
 

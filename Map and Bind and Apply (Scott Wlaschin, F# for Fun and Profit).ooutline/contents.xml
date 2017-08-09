@@ -107,7 +107,6 @@
       <color space="srgb" r="0.999892" g="1" b="0.999881"/>
     </margin-color>
     <print-info>
-      <print-info-key name="NSPaperSize" type="size">{595.27555084228516, 841.8897705078125}</print-info-key>
       <print-info-key name="OOScaleDocumentToFitPageWidth" type="boolean">true</print-info-key>
     </print-info>
   </settings>
@@ -167,17 +166,17 @@
   <items>
     <style/>
     <item rank="" is-root="yes" schema="csZ4IYIb5kL" children-are-sections="yes">
-      <entry/>
+      <checkbox>unchecked</checkbox>
       <entry/>
       <entry/>
     </item>
     <item id="aBOuvYO3xZG" parent-id="daUoGDIDefS" rank="0004">
-      <entry/>
+      <checkbox>unchecked</checkbox>
       <entry/>
       <text>
         <p>
           <run>
-            <lit>Part III: Using the core functions in practice</lit>
+            <lit>Part 3: Using the core functions in practice</lit>
           </run>
         </p>
       </text>
@@ -197,7 +196,7 @@
       </text>
     </item>
     <item id="bU1-pD154kp" parent-id="j0HeGXm1Bzx" rank="0001">
-      <entry/>
+      <checkbox>unchecked</checkbox>
       <entry/>
       <text>
         <p>
@@ -221,8 +220,30 @@
         </p>
       </text>
     </item>
-    <item id="bpK2yvLv2fJ" parent-id="j0HeGXm1Bzx" rank="0004">
+    <item id="bg6_ledFgta" parent-id="dbLzTyukWLJ" rank="">
+      <checkbox>unchecked</checkbox>
       <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>values</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="bojTxlg7Zpo" parent-id="kAez0VGLhH0" rank="">
+      <checkbox>unchecked</checkbox>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>If a list of items gets mapped to an Optional&lt;T&gt;, instead of getting a `List&lt;Optional&lt;T&gt;&gt;`s, an `Optional&lt;List&lt;T&gt;&gt;` would be preferable in many practical applications</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="bpK2yvLv2fJ" parent-id="j0HeGXm1Bzx" rank="0004">
+      <checkbox>unchecked</checkbox>
       <entry/>
       <text>
         <p>
@@ -236,7 +257,7 @@
       </text>
     </item>
     <item id="c3QswB7KuLS" parent-id="lXnE5HfMMil" rank="00ff">
-      <entry/>
+      <checkbox>unchecked</checkbox>
       <entry/>
       <text>
         <p>
@@ -264,7 +285,7 @@
       </text>
     </item>
     <item id="cQdZKoFY7Rs" parent-id="dXOmbTUbVkf" rank="">
-      <entry/>
+      <checkbox>unchecked</checkbox>
       <entry/>
       <text>
         <p>
@@ -295,6 +316,23 @@
         <p>
           <run>
             <lit>signature: (a -&gt; E&lt;b&gt;) -&gt; E&lt;a&gt; -&gt; E&lt;b&gt;</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="cjtKlOOjUNq" parent-id="bojTxlg7Zpo" rank="">
+      <checkbox>unchecked</checkbox>
+      <text>
+        <p>
+          <run>
+            <lit><cell href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise/all" name="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise/all" type="link"/></lit>
+          </run>
+        </p>
+      </text>
+      <text>
+        <p>
+          <run>
+            <lit>Much like JavaScript&apos;s `Promise.all`</lit>
           </run>
         </p>
       </text>
@@ -336,12 +374,12 @@
       </text>
     </item>
     <item id="dXOmbTUbVkf" parent-id="daUoGDIDefS" rank="0003">
-      <entry/>
+      <checkbox>unchecked</checkbox>
       <entry/>
       <text>
         <p>
           <run>
-            <lit>Part II: How to compose world-crossing functions</lit>
+            <lit>Part 2: How to compose world-crossing functions</lit>
           </run>
         </p>
       </text>
@@ -361,7 +399,7 @@
       </text>
     </item>
     <item id="daUoGDIDefS" parent-id="nTBV7hXxoVd" rank="">
-      <entry/>
+      <checkbox>unchecked</checkbox>
       <text>
         <p>
           <run>
@@ -381,7 +419,7 @@
       <style>
         <inherited-style name="Highlight 1" idref="nU7Pax9sHwm"/>
       </style>
-      <entry/>
+      <checkbox>unchecked</checkbox>
       <entry/>
       <text>
         <p>
@@ -394,7 +432,13 @@
     <item id="dbLzTyukWLJ" parent-id="aBOuvYO3xZG" rank="0003">
       <checkbox>unchecked</checkbox>
       <entry/>
-      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>Lifting to a consistent world</lit>
+          </run>
+        </p>
+      </text>
     </item>
     <item id="dmuQwlYmtc_" parent-id="gTow7HyxD8I" rank="0001">
       <checkbox>unchecked</checkbox>
@@ -408,7 +452,7 @@
       </text>
     </item>
     <item id="drKxkvIkGFM" parent-id="cQdZKoFY7Rs" rank="0003">
-      <entry/>
+      <checkbox>unchecked</checkbox>
       <entry/>
       <text>
         <p>
@@ -432,8 +476,19 @@
         </p>
       </text>
     </item>
-    <item id="dxxCy15GK09" parent-id="gTow7HyxD8I" rank="0003">
+    <item id="dxWCqITqnln" parent-id="bg6_ledFgta" rank="">
+      <checkbox>unchecked</checkbox>
       <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>for example make everything a `Result`, event primitive values, for similar chaining</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="dxxCy15GK09" parent-id="gTow7HyxD8I" rank="0003">
+      <checkbox>unchecked</checkbox>
       <entry/>
       <text>
         <p>
@@ -468,7 +523,7 @@
       </text>
     </item>
     <item id="eMaMCpFjwPz" parent-id="cQdZKoFY7Rs" rank="0002">
-      <entry/>
+      <checkbox>unchecked</checkbox>
       <entry/>
       <text>
         <p>
@@ -508,7 +563,7 @@
       </text>
     </item>
     <item id="ebpSXn6ZDUO" parent-id="c3QswB7KuLS" rank="">
-      <entry/>
+      <checkbox>unchecked</checkbox>
       <entry/>
       <text>
         <p>
@@ -525,6 +580,17 @@
         <p>
           <run>
             <lit>common operators: &gt;&gt;= (left to right), =&lt;&lt; (right to left)</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="fay0vFjz6wB" parent-id="dbLzTyukWLJ" rank="0001">
+      <checkbox>unchecked</checkbox>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>functions</lit>
           </run>
         </p>
       </text>
@@ -554,8 +620,33 @@
         </p>
       </text>
     </item>
-    <item id="gTow7HyxD8I" parent-id="j0HeGXm1Bzx" rank="0003">
+    <item id="gFp791EOkQo" parent-id="kAez0VGLhH0" rank="0001">
+      <checkbox>unchecked</checkbox>
       <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>Continue @ </lit>
+          </run>
+          <run>
+            <lit><cell href="https://fsharpforfunandprofit.com/posts/elevated-world-4/#map-vs-traverse" name="elevated-world-4" type="link"/></lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="gH53zdEhRV3" parent-id="fay0vFjz6wB" rank="">
+      <checkbox>unchecked</checkbox>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>Move every function into the &quot;Two-Track&quot; world (`Result` as input and output)</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="gTow7HyxD8I" parent-id="j0HeGXm1Bzx" rank="0003">
+      <checkbox>unchecked</checkbox>
       <entry/>
       <text>
         <p>
@@ -601,8 +692,22 @@
         </p>
       </text>
     </item>
-    <item id="hnkRgY7y0b6" parent-id="aBOuvYO3xZG" rank="0001">
+    <item id="hmd9tiX2bt6" parent-id="kAez0VGLhH0" rank="0002">
+      <checkbox>unchecked</checkbox>
       <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>Skipped down to: </lit>
+          </run>
+          <run>
+            <lit><cell href="https://fsharpforfunandprofit.com/posts/elevated-world-4/#sequence-as-a-recipe-for-ad-hoc-implementations" name="elevated-world-4" type="link"/></lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="hnkRgY7y0b6" parent-id="aBOuvYO3xZG" rank="0001">
+      <checkbox>unchecked</checkbox>
       <entry/>
       <text>
         <p>
@@ -613,7 +718,7 @@
       </text>
     </item>
     <item id="huMv4ErhOKJ" parent-id="j0HeGXm1Bzx" rank="0005">
-      <entry/>
+      <checkbox>unchecked</checkbox>
       <entry/>
       <text>
         <p>
@@ -658,7 +763,7 @@
       </text>
     </item>
     <item id="j0HeGXm1Bzx" parent-id="daUoGDIDefS" rank="00023f">
-      <entry/>
+      <checkbox>unchecked</checkbox>
       <entry/>
       <text>
         <p>
@@ -686,6 +791,17 @@
         <p>
           <run>
             <lit>lift3: (a -&gt; b -&gt; c -&gt; d) -&gt; E&lt;a&gt; -&gt; E&lt;b&gt; -&gt; E&lt;c&gt; -&gt; E&lt;d&gt;</lit>
+          </run>
+        </p>
+      </text>
+    </item>
+    <item id="kAez0VGLhH0" parent-id="daUoGDIDefS" rank="0005">
+      <checkbox>unchecked</checkbox>
+      <entry/>
+      <text>
+        <p>
+          <run>
+            <lit>Part 4: Mixing lists and elevated values</lit>
           </run>
         </p>
       </text>
@@ -749,7 +865,7 @@
       </text>
     </item>
     <item id="lXnE5HfMMil" parent-id="aBOuvYO3xZG" rank="">
-      <entry/>
+      <checkbox>unchecked</checkbox>
       <entry/>
       <text>
         <p>
@@ -837,7 +953,7 @@
       </text>
     </item>
     <item id="n4u3T3qR14z" parent-id="c3QswB7KuLS" rank="0001">
-      <entry/>
+      <checkbox>unchecked</checkbox>
       <entry/>
       <text>
         <p>
@@ -848,7 +964,7 @@
       </text>
     </item>
     <item id="nISbEzR8Djn" parent-id="j0HeGXm1Bzx" rank="0002">
-      <entry/>
+      <checkbox>unchecked</checkbox>
       <entry/>
       <text>
         <p>
@@ -865,11 +981,11 @@
       <style>
         <inherited-style name="Heading 1" idref="eUsXLp0Pv1g"/>
       </style>
-      <entry/>
+      <checkbox>unchecked</checkbox>
       <text>
         <p>
           <run>
-            <lit><cell href="https://vimeo.com/142347199" name="https://fsharpforfunandprofit.com/series/map-and-bind-and-apply-oh-my.html" type="link"/></lit>
+            <lit><cell href="https://fsharpforfunandprofit.com/series/map-and-bind-and-apply-oh-my.html" name="https://fsharpforfunandprofit.com/series/map-and-bind-and-apply-oh-my.html" type="link"/></lit>
           </run>
         </p>
       </text>
@@ -937,7 +1053,7 @@
       </text>
     </item>
     <item id="orTCyDpP8Vz" parent-id="bpK2yvLv2fJ" rank="0002">
-      <entry/>
+      <checkbox>unchecked</checkbox>
       <entry/>
       <text>
         <p>
